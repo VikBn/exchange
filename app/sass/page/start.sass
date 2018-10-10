@@ -1,0 +1,78 @@
+// start
+.start
+  &__card
+    padding: 1.4em 2.2em
+    border-radius: 10px
+    margin-bottom: 2rem
+    &-1
+      background: linear-gradient(to left top, #2d4934 60%, #344f3a 30%)
+    &-2
+      background: linear-gradient(to left top, #353535 60%, #515151 30%)
+    &-3
+      background: linear-gradient(to left top, #301103 60%, #56351e 30%)
+  &__heading
+    color: #fff
+    text-align: center
+  &__row
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__price
+    color: #fff
+    font-size: 1.4rem
+    font-weight: 500
+  &__price-sign
+    font-size: 1.5rem
+    font-weight: 500
+    color: #fff
+  &__price-num
+    font-size: 1.5rem
+    font-weight: 500
+    color: #fff
+  &__percent
+    margin: .3em 0 .4em
+    color: #fff
+  &__card-subtitle
+    color: #576d5d
+  &__card-num
+    font-size: 1.1rem
+    font-weight: 500
+    color: #68b544
+  &__card-negative
+    color: red
+  &__featured
+    text-align: center
+  &__switch
+    height: 0
+    width: 0
+    visibility: hidden
+
+// toggle
+label.start__switch-label
+  text-indent: -9999px
+  width: 50px
+  height: 18px
+  background: gray
+  border-radius: 20px
+  position: relative
+  transition: .3s
+  cursor: pointer
+label.start__switch-label::after
+  content: ''
+  position: absolute
+  top: -3px
+  left: -3px
+  width: 24px
+  height: 24px
+  background: #fff
+  border-radius: 20px
+  transition: .3s
+
+input.start__switch:checked + label
+  background: lightblue
+  transition: .3s
+
+input.start__switch:checked + label::after
+  left: calc(100% + 3px)
+  transform: translateX(-100%)
+  transition: .3s

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Exchange</title>
+</head>
+
+<body class="page">
+    <div class="page__wrap">
+
+        <!-- Top -->
+        <div class="top__wrap">
+            <div class="container">
+                <div class="top__row">
+                    <div class="col-md-8 col-sm-8 col-12 text-center">
+                        <span class="top__text">Select currency to exchange:</span>
+                    </div>
+
+                    <!-- Select -->
+                    <div class="form-group col-md-4 col-sm-4 col-12">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option value='usd'>USD</option>
+                          <option value='eur'>EUR</option>
+                          <option value='rub'>RUB</option>
+                          <option value='gbp'>GBP</option>
+                      </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Start -->
+        <div class="start__wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="start__card start__card-1" dataCur="">
+                            <div class="start__content">
+                                <h4 class="start__heading">Ethereum</h4>
+                                <div class="start__featured">
+                                    <img src="img/stock_3.png" alt="">
+                                </div>
+                                <div class="start__content-inner">
+                                  <div class="start__row">
+                                      <p class="start__price">Price:</p>
+                                      <p><span class="start__price-num"></span></p>
+                                  </div>
+                                  <div class="start__row">
+                                      <span class="start__percent">Percent change</span>
+                                      <input id="toggle-one" class="start__switch"  type="checkbox">
+                                      <label class="start__switch-label" for="toggle-one">Toggle</label>
+                                  </div>
+                                  <div class="start__row">
+                                      <span class="start__card-subtitle">Hour change</span>
+                                      <span class="start__card-num start__card-hour"></span>
+                                  </div>
+                                  <div class="start__row">
+                                      <span class="start__card-subtitle">Day change</span>
+                                      <span class="start__card-num start__card-day"></span>
+                                  </div>
+                                  <div class="start__row">
+                                      <span class="start__card-subtitle">Week change</span>
+                                      <span class="start__card-num start__card-week"></span>
+                                  </div>
+                                  <div class="start__row">
+                                      <span class="start__card-subtitle">Month change</span>
+                                      <span class="start__card-num start__card-month"></span>
+                                  </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="start__card start__card-2">
+                            <div class="start__content">
+                                <h4 class="start__heading">Litecoin</h4>
+                                <div class="start__featured">
+                                    <img src="img/stock_3.png" alt="">
+                                </div>
+                                <div class="start__row">
+                                    <p class="start__price">Price:</p>
+                                    <p class="start__price-num"><span class="start__price-sign">$</span>22. 526.92</p>
+                                </div>
+                                <div class="start__row">
+                                    <span class="start__percent">Percent change</span>
+                                    <input id="toggle-two" class="start__switch"  type="checkbox">
+                                    <label class="start__switch-label" for="toggle-two">Toggle</label>
+                                </div>
+                                <div class="start__row">
+                                    <span class="start__card-subtitle">Hour change</span>
+                                    <span class="start__card-num start__card-hour">+266%</span>
+                                </div>
+                                <div class="start__row">
+                                    <span class="start__card-subtitle">Day change</span>
+                                    <span class="start__card-num start__card-day">+266%</span>
+                                </div>
+                                <div class="start__row">
+                                    <span class="start__card-subtitle">Week change</span>
+                                    <span class="start__card-num start__card-week">+266%</span>
+                                </div>
+                                <div class="start__row">
+                                    <span class="start__card-subtitle">Month change</span>
+                                    <span class="start__card-num start__card-month">+266%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="start__card start__card-3">
+                            <div class="start__content">
+                                <h4 class="start__heading">Bitcoin</h4>
+                                <div class="start__featured">
+                                    <img src="img/stock_3.png" alt="">
+                                </div>
+
+                                <div class="start__row">
+                                  <p class="start__price">Price:</p>
+                                  <p class="start__price-num"><span class="start__price-sign">$</span>22. 526.92</p>
+                                </div>
+                                <div class="start__row">
+                                    <span class="start__percent">Percent change</span>
+                                    <input id="toggle-three" class="start__switch"  type="checkbox">
+                                    <label class="start__switch-label" for="toggle-three">Toggle</label>
+                                </div>
+                                <div class="start__row">
+                                    <span class="start__card-subtitle">Hour change</span>
+                                    <span class="start__card-num">+266%</span>
+                                </div>
+                                <div class="start__row">
+                                    <span class="start__card-subtitle">Day change</span>
+                                    <span class="start__card-num">+266%</span>
+                                </div>
+                                <div class="start__row">
+                                    <span class="start__card-subtitle">Week change</span>
+                                    <span class="start__card-num">+266%</span>
+                                </div>
+                                <div class="start__row">
+                                    <span class="start__card-subtitle">Month change</span>
+                                    <span class="start__card-num">+266%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <!-- Scripts -->
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src='js/index.js'></script>
+
+</body>
+
+</html>
